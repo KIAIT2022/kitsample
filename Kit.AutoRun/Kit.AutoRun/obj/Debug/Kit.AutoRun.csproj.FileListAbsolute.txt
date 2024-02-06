@@ -27,3 +27,5 @@ D:\Projects\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.csproj.GenerateResourc
 D:\Projects\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.csproj.CoreCompileInputs.cache
 D:\Projects\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.exe
 D:\Projects\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.pdb
+C:\fast\Github\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.exe
+C:\fast\Github\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.pdb
