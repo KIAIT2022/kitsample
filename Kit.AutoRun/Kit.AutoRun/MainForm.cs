@@ -23,7 +23,6 @@ namespace Kit.AutoRun
         private bool bWait = false;
         private bool bLoop = false;
         
-
         private const string SAVEIFLE = "Do you want to save this file?";
 
         private const string GROUP01 = "GROUP01"; //Function Key: Enter, Esc, Tab..
@@ -88,11 +87,8 @@ namespace Kit.AutoRun
         private Color KeyColor { get; set; } = Color.Black;
         private Color ClickColor { get; set; } = Color.Red;
         private Color FunctionColor { get; set; } = Color.Orange;
-
-        
-
+            
         private DataGridViewCellStyle dataGridViewCellStyle = new DataGridViewCellStyle();
-
 
         public MainForm()
         {
@@ -110,9 +106,7 @@ namespace Kit.AutoRun
 
             this.bindingSource.ListChanged += new System.ComponentModel.ListChangedEventHandler(this.BindingSource_ListChanged);
         }
-
-       
-
+         
         private Bitmap GetBitmap(string strName)
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
@@ -120,7 +114,6 @@ namespace Kit.AutoRun
             object objBitmap = Properties.Resources.ResourceManager.GetObject(strName, Properties.Resources.Culture);
             if (objBitmap != null)
                 return (Bitmap)objBitmap;
-
             return null;
         }
 
@@ -131,7 +124,6 @@ namespace Kit.AutoRun
                 ToolStrip toolStrip = BuildToolStrip(strName, iSize);
                 buttonTable[strGroup] = toolStrip;                
             }
-
             return (ToolStrip)buttonTable[strGroup];
         }
 
@@ -142,11 +134,10 @@ namespace Kit.AutoRun
                 ToolStripMenuItem toolStrip = CreateToolStripMenuItem(strName.Substring(1),"", null, Keys.Alt | Keys.F,  null);
                 menuTable[strGroup] = toolStrip;
             }
-
             return (ToolStripMenuItem)menuTable[strGroup];
         }
         
-
+        //Create Menu & Toolstrip
         private void InitButton()
         {
             strSetIcon = RegistryData.Select(RegistryData.KIT_SET_ICON, "_1").ToString();
@@ -159,6 +150,7 @@ namespace Kit.AutoRun
             buttonTable = new Hashtable();
             menuTable = new Hashtable();
 
+            //Create Buttons
             List<KitMenuItem> listOfItem = new List<KitMenuItem>
             {
                 new KitMenuItem() { Group = "2", Type = 1, Name = "Key", Tag = ADD_KEY, Objects = null },
@@ -326,9 +318,7 @@ namespace Kit.AutoRun
             notifyIcon1.Visible = true;            
             this.ShowInTaskbar = true;
             Action.SetRegistry(0);           
-        }
-        
-        
+        }             
 
         #region Add/Del/Edit
         private void ShowForm(BaseForm baseForm, DataItem objectItem, Color foreColor, params object[] objects)
@@ -423,6 +413,7 @@ namespace Kit.AutoRun
         }
         #endregion
 
+        #region Work Item
         private void MoveItem(int iCount)
         {
             int iIndex = dgView.SelectedRows[0].Index;
@@ -463,6 +454,15 @@ namespace Kit.AutoRun
             Analyst.SetTitle(this, strFileName, Saved);
         }
 
+        private void RefreshGrid()
+        {
+            foreach (DataGridViewRow row in dgView.Rows)
+            {
+                row.DefaultCellStyle.ForeColor = (((DataItem)row.DataBoundItem).IsFunction) ? FunctionColor : (((DataItem)row.DataBoundItem).Type == "Key" ? KeyColor : ClickColor);
+            }
+        }
+        #endregion
+
         #region File
         private void CreateNew()
         {
@@ -477,6 +477,7 @@ namespace Kit.AutoRun
             Analyst.SetTitle(this, strFileName, Saved);            
         }
 
+        //Save a new file
         private void SaveFile()
         {            
             if (IsNew)
@@ -498,6 +499,7 @@ namespace Kit.AutoRun
                 RegistryData.Update(strFileName, dgView.SelectedRows[0].Index);
         }
 
+        //Save a exist file
         private void SaveData(string strFileName)
         {
             if (strFileName != "")
@@ -510,15 +512,7 @@ namespace Kit.AutoRun
                 HasChanged = false;
             }
         }
-
-        private void RefreshGrid()
-        {
-            foreach (DataGridViewRow row in dgView.Rows)
-            {
-                row.DefaultCellStyle.ForeColor = (((DataItem)row.DataBoundItem).IsFunction) ? FunctionColor : (((DataItem)row.DataBoundItem).Type == "Key" ? KeyColor : ClickColor);
-            }
-        }
-
+        
         private void OpenData(string strFileName)
         {
             if (File.Exists(strFileName))
@@ -579,7 +573,6 @@ namespace Kit.AutoRun
                 // Open the file to read from.
                 try
                 {
-
                     OpenData(strFileName);
                     RefreshGrid();
                     Analyst.SetTitle(this, strFileName, Saved);
@@ -598,6 +591,7 @@ namespace Kit.AutoRun
         }
         #endregion
 
+        #region Excute
         private void ExcuteItem(DataItem dataItem)
         {
             switch (dataItem.Type)
@@ -674,6 +668,9 @@ namespace Kit.AutoRun
                 return true;
             return false;
         }
+
+        #region Run#1
+        //using for(), xác định thời điểm bắt đầu và kết thúc loop => không chạy thread
         private void Run()
         {
             try
@@ -693,7 +690,7 @@ namespace Kit.AutoRun
                     }
 
                     DataItem dataItem = objData as DataItem;
-                            bool bBegin = IsBegin(dataItem);
+                    bool bBegin = IsBegin(dataItem);
 
                     if (bBegin)
                     {
@@ -717,9 +714,7 @@ namespace Kit.AutoRun
                         ExcuteItem(dataItem);
                         iIndex = bindingSource.IndexOf(dataItem);
                         dgView.Rows[iIndex].Selected = true;
-                    }
-
-                    
+                    }                                       
                 }
             }
             catch (Exception e)
@@ -728,7 +723,10 @@ namespace Kit.AutoRun
                 MessageBox.Show(e.Message,"Kit.AutoRun");                
             }
         }
+        #endregion
 
+        #region Run#1
+        //using foreach, chạy thread theo thời gian delay đã chọn
         private void Run2()
         {
             try
