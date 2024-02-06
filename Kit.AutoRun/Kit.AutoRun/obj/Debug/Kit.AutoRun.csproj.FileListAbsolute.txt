@@ -1,0 +1,29 @@
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\bin\Debug\Kit.AutoRun.exe.config
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\bin\Debug\Kit.AutoRun.exe
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\bin\Debug\Kit.AutoRun.pdb
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.Forms.KeyForm.resources
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.Forms.ClickForm.resources
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.MainForm.resources
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.Properties.Resources.resources
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.csproj.GenerateResource.cache
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.csproj.CoreCompileInputs.cache
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.exe
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.pdb
+I:\Project C#\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.csprojAssemblyReference.cache
+I:\Project C#\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.exe
+I:\Project C#\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.pdb
+I:\Project C#\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.Properties.Resources.resources
+I:\Project C#\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.csproj.GenerateResource.cache
+I:\Project C#\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.csproj.CoreCompileInputs.cache
+D:\Projects\Kit.AutoRun\Kit.AutoRun\bin\Debug\Kit.AutoRun.exe.config
+D:\Projects\Kit.AutoRun\Kit.AutoRun\bin\Debug\Kit.AutoRun.exe
+D:\Projects\Kit.AutoRun\Kit.AutoRun\bin\Debug\Kit.AutoRun.pdb
+D:\Projects\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.csprojAssemblyReference.cache
+D:\Projects\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.Forms.KeyForm.resources
+D:\Projects\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.Forms.ClickForm.resources
+D:\Projects\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.MainForm.resources
+D:\Projects\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.Properties.Resources.resources
+D:\Projects\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.csproj.GenerateResource.cache
+D:\Projects\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.csproj.CoreCompileInputs.cache
+D:\Projects\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.exe
+D:\Projects\Kit.AutoRun\Kit.AutoRun\obj\Debug\Kit.AutoRun.pdb

@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FC1B905A-F76E-4BFE-B3B1-13E83A7C9155}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kit.AutoRun</RootNamespace>
+    <AssemblyName>Kit.AutoRun</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action.cs" />
+    <Compile Include="Analyst.cs" />
+    <Compile Include="DataItem.cs" />
+    <Compile Include="Forms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KeyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KeyForm.Designer.cs">
+      <DependentUpon>KeyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MouseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MouseForm.Designer.cs">
+      <DependentUpon>MouseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitMenuItem.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="OpenWindowGetter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistryData.cs" />
+    <EmbeddedResource Include="Forms\KeyForm.resx">
+      <DependentUpon>KeyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MouseForm.resx">
+      <DependentUpon>MouseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Kit.AutoRun.Forms.ClickForm.resources" />
+    <EmbeddedResource Include="obj\Debug\Kit.AutoRun.Forms.KeyForm.resources" />
+    <EmbeddedResource Include="obj\Debug\Kit.AutoRun.MainForm.resources" />
+    <EmbeddedResource Include="obj\Debug\Kit.AutoRun.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Release\Kit.AutoRun.Forms.ClickForm.resources" />
+    <EmbeddedResource Include="obj\Release\Kit.AutoRun.Forms.KeyForm.resources" />
+    <EmbeddedResource Include="obj\Release\Kit.AutoRun.MainForm.resources" />
+    <EmbeddedResource Include="obj\Release\Kit.AutoRun.Properties.Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="bin\Debug\auto01.kit" />
+    <None Include="bin\Debug\Kit.AutoRun.exe.config" />
+    <None Include="bin\Release\Kit.AutoRun.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Kit.AutoRun.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Kit.AutoRun.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\Kit.AutoRun.csprojAssemblyReference.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\Kit.AutoRun.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\Kit.AutoRun.csproj.GenerateResource.cache" />
+    <None Include="obj\Release\Kit.AutoRun.csprojAssemblyReference.cache" />
+    <None Include="Properties\DataSources\DataItem.datasource" />
+    <None Include="Properties\Resources.resx.bak" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Alt_2.png" />
+    <None Include="Resources\Auto.ico" />
+    <None Include="Resources\Backspace_1.ico" />
+    <None Include="Resources\Backspace_2.png" />
+    <None Include="Resources\Backspace_3.png" />
+    <None Include="Resources\Copy_1.ico" />
+    <None Include="Resources\Copy_2.png" />
+    <None Include="Resources\Copy_3.png" />
+    <None Include="Resources\Ctrl_2.png" />
+    <None Include="Resources\Cut_1.ico" />
+    <None Include="Resources\Cut_2.png" />
+    <None Include="Resources\Cut_3.png" />
+    <None Include="Resources\Decrease_1.ico" />
+    <None Include="Resources\Decrease_11.ico" />
+    <None Include="Resources\Decrease_2.png" />
+    <None Include="Resources\Decrease_21.png" />
+    <None Include="Resources\Decrease_3.png" />
+    <None Include="Resources\Decrease_31.png" />
+    <None Include="Resources\Delete_1.ico" />
+    <None Include="Resources\Delete_2.png" />
+    <None Include="Resources\Delete_3.png" />
+    <None Include="Resources\Down_1.ico" />
+    <None Include="Resources\Down_2.png" />
+    <None Include="Resources\Down_3.png" />
+    <None Include="Resources\Edit_1.ico" />
+    <None Include="Resources\Edit_2.png" />
+    <None Include="Resources\Edit_3.png" />
+    <None Include="Resources\End_1.ico" />
+    <None Include="Resources\End_2.png" />
+    <None Include="Resources\End_3.png" />
+    <None Include="Resources\Enter_1.ico" />
+    <None Include="Resources\Enter_2.png" />
+    <None Include="Resources\Enter_3.png" />
+    <None Include="Resources\Esc_1.ico" />
+    <None Include="Resources\Esc_2.png" />
+    <None Include="Resources\Esc_3.png" />
+    <None Include="Resources\F10_1.png" />
+    <None Include="Resources\F10_2.png" />
+    <None Include="Resources\F10_3.png" />
+    <None Include="Resources\F11_1.png" />
+    <None Include="Resources\F11_2.png" />
+    <None Include="Resources\F11_3.png" />
+    <None Include="Resources\F12_1.png" />
+    <None Include="Resources\F12_2.png" />
+    <None Include="Resources\F12_3.png" />
+    <None Include="Resources\F1_1.png" />
+    <None Include="Resources\F1_2.png" />
+    <None Include="Resources\F1_3.png" />
+    <None Include="Resources\F2_1.png" />
+    <None Include="Resources\F2_2.png" />
+    <None Include="Resources\F2_3.png" />
+    <None Include="Resources\F3_1.png" />
+    <None Include="Resources\F3_2.png" />
+    <None Include="Resources\F3_3.png" />
+    <None Include="Resources\F4_1.png" />
+    <None Include="Resources\F4_2.png" />
+    <None Include="Resources\F4_3.png" />
+    <None Include="Resources\F5_1.png" />
+    <None Include="Resources\F5_2.png" />
+    <None Include="Resources\F5_3.png" />
+    <None Include="Resources\F6_1.png" />
+    <None Include="Resources\F6_2.png" />
+    <None Include="Resources\F6_3.png" />
+    <None Include="Resources\F7_1.png" />
+    <None Include="Resources\F7_2.png" />
+    <None Include="Resources\F7_3.png" />
+    <None Include="Resources\F8_1.png" />
+    <None Include="Resources\F8_2.png" />
+    <None Include="Resources\F8_3.png" />
+    <None Include="Resources\F9_1.png" />
+    <None Include="Resources\F9_2.png" />
+    <None Include="Resources\F9_3.png" />
+    <None Include="Resources\Home_1.ico" />
+    <None Include="Resources\Home_2.png" />
+    <None Include="Resources\Home_3.png" />
+    <None Include="Resources\Increase_1.ico" />
+    <None Include="Resources\Increase_11.ico" />
+    <None Include="Resources\Increase_2.png" />
+    <None Include="Resources\Increase_21.png" />
+    <None Include="Resources\Increase_3.png" />
+    <None Include="Resources\Increase_31.png" />
+    <None Include="Resources\Insert_1.ico" />
+    <None Include="Resources\Insert_2.png" />
+    <None Include="Resources\Insert_3.png" />
+    <None Include="Resources\Keyboard_2.png" />
+    <None Include="Resources\Key_1.ico" />
+    <None Include="Resources\Key_2.png" />
+    <None Include="Resources\Key_3.png" />
+    <None Include="Resources\Left_1.ico" />
+    <None Include="Resources\Left_2.png" />
+    <None Include="Resources\Left_3.png" />
+    <None Include="Resources\Mouse_1.ico" />
+    <None Include="Resources\Mouse_2.png" />
+    <None Include="Resources\Mouse_3.png" />
+    <None Include="Resources\MoveDown_1.ico" />
+    <None Include="Resources\MoveDown_2.png" />
+    <None Include="Resources\MoveDown_3.png" />
+    <None Include="Resources\MoveUp_1.ico" />
+    <None Include="Resources\MoveUp_2.png" />
+    <None Include="Resources\MoveUp_3.png" />
+    <None Include="Resources\New_1.ico" />
+    <None Include="Resources\New_2.png" />
+    <None Include="Resources\New_3.png" />
+    <None Include="Resources\Open_1.ico" />
+    <None Include="Resources\Open_2.ico" />
+    <None Include="Resources\Open_3.ico" />
+    <None Include="Resources\Paste_1.ico" />
+    <None Include="Resources\Paste_2.png" />
+    <None Include="Resources\Paste_3.png" />
+    <None Include="Resources\PgDn_1.ico" />
+    <None Include="Resources\PgDn_2.png" />
+    <None Include="Resources\PgDn_3.png" />
+    <None Include="Resources\PgUp_1.ico" />
+    <None Include="Resources\PgUp_2.png" />
+    <None Include="Resources\PgUp_3.png" />
+    <None Include="Resources\PrintScreen_1.ico" />
+    <None Include="Resources\PrintScreen_2.png" />
+    <None Include="Resources\Remove_1.ico" />
+    <None Include="Resources\Remove_2.png" />
+    <None Include="Resources\Remove_3.ico" />
+    <None Include="Resources\Right_1.ico" />
+    <None Include="Resources\Right_2.png" />
+    <None Include="Resources\Right_3.png" />
+    <None Include="Resources\Run_1.ico" />
+    <None Include="Resources\Run_2.png" />
+    <None Include="Resources\Run_3.png" />
+    <None Include="Resources\Save_1.ico" />
+    <None Include="Resources\Save_2.png" />
+    <None Include="Resources\Save_3.png" />
+    <None Include="Resources\ScrollLock_1.ico" />
+    <None Include="Resources\ScrollLock_2.ico" />
+    <None Include="Resources\ScrollLock_3.png" />
+    <None Include="Resources\SelectAll_1.ico" />
+    <None Include="Resources\SelectAll_2.png" />
+    <None Include="Resources\SelectAll_3.png" />
+    <None Include="Resources\Sendwithoutwaiting_1.ico" />
+    <None Include="Resources\SentWait_1.ico" />
+    <None Include="Resources\Shift_2.png" />
+    <None Include="Resources\Start.ico" />
+    <None Include="Resources\Start_2.png" />
+    <None Include="Resources\Stop.ico" />
+    <None Include="Resources\Stop_2.png" />
+    <None Include="Resources\Tab_1.ico" />
+    <None Include="Resources\Tab_2.png" />
+    <None Include="Resources\Tab_3.png" />
+    <None Include="Resources\Title_1.png" />
+    <None Include="Resources\Up_1.ico" />
+    <None Include="Resources\Up_2.png" />
+    <None Include="Resources\Up_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Kit.AutoRun.exe" />
+    <Content Include="bin\Debug\Kit.AutoRun.pdb" />
+    <Content Include="bin\Release\Kit.AutoRun.exe" />
+    <Content Include="bin\Release\Kit.AutoRun.pdb" />
+    <Content Include="obj\Debug\Kit.AutoRun.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Kit.AutoRun.exe" />
+    <Content Include="obj\Debug\Kit.AutoRun.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="obj\Release\Kit.AutoRun.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\Kit.AutoRun.exe" />
+    <Content Include="obj\Release\Kit.AutoRun.pdb" />
+    <Content Include="obj\Release\TempPE\Properties.Resources.Designer.cs.dll" />
+    <None Include="Resources\Loop_1.ico" />
+    <None Include="Resources\Loop_1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

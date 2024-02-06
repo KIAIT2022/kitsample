@@ -1,0 +1,15 @@
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\bin\Release\Kit.AutoRun.exe.config
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\bin\Release\Kit.AutoRun.exe
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\bin\Release\Kit.AutoRun.pdb
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Release\Kit.AutoRun.Forms.KeyForm.resources
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Release\Kit.AutoRun.Forms.ClickForm.resources
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Release\Kit.AutoRun.MainForm.resources
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Release\Kit.AutoRun.Properties.Resources.resources
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Release\Kit.AutoRun.csproj.GenerateResource.cache
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Release\Kit.AutoRun.csproj.CoreCompileInputs.cache
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Release\Kit.AutoRun.exe
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Release\Kit.AutoRun.pdb
+C:\Users\anh.huynh\source\repos\Kit.AutoRun\Kit.AutoRun\obj\Release\Kit.AutoRun.csprojAssemblyReference.cache
+I:\Project C#\Kit.AutoRun\Kit.AutoRun\obj\Release\Kit.AutoRun.csprojAssemblyReference.cache
+I:\Project C#\Kit.AutoRun\Kit.AutoRun\obj\Release\Kit.AutoRun.exe
+I:\Project C#\Kit.AutoRun\Kit.AutoRun\obj\Release\Kit.AutoRun.pdb
